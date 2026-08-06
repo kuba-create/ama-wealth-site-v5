@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FFFFFF; font-family: 'Lato', sans-serif; color: #0A0A0A; -webkit-font-smoothing: antialiased; }
+  a { color: #7A94A8; text-decoration: none; }
+  a:hover { color: #0A0A0A; }
+  .navlink:hover { color:#FFFFFF !important; }
+  @media (max-width: 1180px) and (min-width: 781px) {
+    .m-header-inner { padding: 16px 20px !important; gap: 14px !important; }
+    header nav { gap: 12px !important; }
+    header nav a.navlink { font-size: 11px !important; }
+    header nav a[href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min"] { padding: 10px 14px !important; font-size: 11px !important; white-space: nowrap; }
+  }
+  * { max-width: 100%; }
+  html, body { overflow-x: hidden; }
+  img { max-width: 100%; height: auto; }
+  @media (max-width: 780px) {
+    body { overflow-x: hidden; }
+    .m-grid { grid-template-columns: 1fr !important; }
+    .m-grid-3 { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .m-header-nav { gap: 12px !important; }
+    .m-header-nav a { font-size: 11px !important; }
+    .m-fs-64 { font-size: 32px !important; }
+    .m-fs-44 { font-size: 27px !important; }
+    .m-fs-38 { font-size: 23px !important; }
+    .m-banner-logo { height: 64px !important; }
+    .m-banner-text-a { font-size: 13px !important; }
+    .m-banner-text-b { font-size: 8px !important; }
+    .m-banner-wrap { padding: 16px 20px !important; }
+    p, li { font-size: 15px !important; }
+    .m-header-inner { padding: 10px 16px !important; gap: 8px !important; flex-wrap: wrap !important; min-height: 0 !important; }
+    .m-header-logo { flex: 1 1 auto !important; }
+    .m-header-logo img { height: 30px !important; }
+    .m-header-logo span { font-size: 12px !important; }
+    header nav { width: 100% !important; order: 3; overflow-x: auto !important; -webkit-overflow-scrolling: touch; padding: 4px 0 6px; gap: 18px !important; }
+    header nav a { flex-shrink: 0; }
+    .inv-services-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+    .inv-services-grid > div { display: flex; justify-content: center; }
+    .inv-services-grid > div img { height: 120px !important; }
+    .inv-services-grid p { font-size: 14px !important; }
+    .disclosure-flex { flex-direction: column !important; gap: 24px !important; }
+    .disclosure-flex > div { margin-bottom: 0 !important; }
+  }
+</style>
+</helmet>
+
+<div style="--accent: {{ accentColor }}; width:100%; overflow:clip;">
+
+  <!-- ============ BRAND BANNER ============ -->
+  <div style="background:#7A94A8; border-bottom:1px solid rgba(0,0,0,.12);">
+    <div class="m-banner-wrap" style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:0; padding:30px 40px;">
+      <img class="m-banner-logo" src="assets/gorilla-white.png" alt="AMA Wealth Management" style="height:240px; width:auto; object-fit:contain;">
+      <div style="text-align:center; margin-top:-16px;">
+        <div class="m-banner-text-a" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:26px; line-height:1.4; letter-spacing:.34em; color:#fff; padding-left:.34em; white-space:nowrap;">AMA INVESTMENTS</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STICKY HEADER ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:#0A0A0A; border-bottom:1px solid rgba(255,255,255,.08); flex-shrink:0; min-height:0;">
+    <div class="m-header-inner" style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:18px 40px; min-height:76px; box-sizing:border-box;">
+      <a href="index.html" class="m-header-logo" style="display:flex; align-items:center; gap:13px; cursor:pointer; flex-shrink:0;">
+        <img src="assets/gorilla-white.png" alt="AMA Wealth Management" style="height:40px; width:auto; object-fit:contain;">
+        <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:14px; letter-spacing:.24em; color:#fff; white-space:nowrap;">AMA INVESTMENTS</span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:22px; white-space:nowrap;">
+        <a href="index.html#approach" class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Approach</a>
+        <a href="index.html#clients" class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Clients</a>
+        <a href="index.html#planning" class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Planning</a>
+        <span class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:.1em; color:#fff;">Investments</span>
+        <a href="index.html#media" class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Media</a>
+        <a href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min" target="_blank" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:12px; letter-spacing:.08em; color:#0A0A0A; background:var(--accent,#7A94A8); padding:12px 20px;">Book an intro call →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- container with ledger side rails -->
+  <main style="max-width:1280px; margin:0 auto; border-left:1px solid #E4E7EA; border-right:1px solid #E4E7EA;">
+
+    <!-- ============ INVESTMENT SERVICES ============ -->
+    <section data-screen-label="Investment Services" style="border-bottom:1px solid #E4E7EA; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ INVESTMENT SERVICES</div>
+      <h1 class="m-fs-44" style="font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 44px; line-height: 1.15; color: #0A0A0A; margin: 0 0 16px; max-width: 760px;">Evidence-based, not headline-based.</h1>
+      <p style="font-family:'Lato',sans-serif; font-size:17px; line-height:1.8; color:#54606A; margin:0 0 48px; max-width:640px;">A financial plan will lay out the map for your goals.&nbsp;<br>The investments are a crucial component of the "how" will achieve those goals.&nbsp;</p>
+
+      <div style="background:rgba(122,148,168,.08); padding:clamp(28px,6vw,48px) clamp(20px,6vw,56px); border-radius:6px; border-left:4px solid var(--accent,#7A94A8);">
+        <div class="inv-services-grid" style="display:grid; grid-template-columns:180px 1fr; gap:48px; align-items:start;">
+          <div style="display:flex; justify-content:center;">
+            <img src="assets/ama-investments-logo.png" alt="AMA Investments" style="width:100%; max-width:160px; object-fit:contain;">
+          </div>
+          <div>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:0 0 20px; max-width:640px;">Investment services are offered through AMA Investments (a trade name of Aligned Capital Partners Inc.). Our licensed Investment Advisors will take the time to explain why we invest the way we do and how those investments tie back to your financial plan.</p>
+            <p style="font-family: 'Lato',sans-serif; font-size: 15px; line-height: 1.8; color: #0A0A0A; font-style: italic; margin: 0 0 28px; max-width: 640px;">Our approach in two sentences: <br>We believe that markets generally work and trying to guess what happens next is how you lose money - not make it. Keep costs low, stay diversified, and focus on what we CAN control.</p>
+            <div class="m-grid-3" style="display:grid; grid-template-columns:1fr; gap:28px;">
+              <ul style="margin:0; padding:0; list-style:none; display:grid; gap:28px;">
+                <li style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.6; color:#54606A; padding-left:22px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Globally diversified portfolios</li>
+                <li style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.6; color:#54606A; padding-left:22px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Low-cost, tax-efficient implementation</li>
+                <li style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.6; color:#54606A; padding-left:22px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Regular rebalancing &amp; monitoring</li>
+                <li style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.6; color:#54606A; padding-left:22px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Behavioural coaching through volatility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THOUGHTS ON INVESTMENTS ============ -->
+    <section style="border-bottom:1px solid #E4E7EA; background:#FAFBFB; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:28px;">/ THOUGHTS ON INVESTMENTS</div>
+      <a href="https://aravindsithamparapillai.substack.com/s/investment-due-diligence" target="_blank" class="rowlink" style="display:flex; align-items:center; gap:28px; padding:28px 32px; margin-bottom:48px; background:#FFFFFF; border-left:4px solid var(--accent,#7A94A8); border-radius:6px;">
+        <img src="./substack-icon.png" alt="Substack" style="width:64px; height:64px; flex-shrink:0; object-fit:contain;">
+        <span style="flex:1;">
+          <span style="display:block; font-family:'Montserrat',sans-serif; font-weight:600; font-size:22px; color:#0A0A0A;">Investment insights on Substack</span>
+          <span style="display:block; font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.6; color:#54606A; margin-top:5px; max-width:520px;">Data-driven perspectives on evidence-based investing, market behaviour, and long-term wealth building. All delivered regularly to your inbox.</span>
+        </span>
+        <span style="color:var(--accent,#7A94A8); font-size:20px;">↗</span>
+      </a>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section data-screen-label="Contact" style="background:#0A0A0A;">
+      <div style="padding:clamp(36px,8vw,80px) clamp(20px,6vw,56px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ CONTACT</div>
+        <h2 class="m-fs-44" style="font-family:'Montserrat',sans-serif; font-weight:400; font-size:44px; line-height:1.12; color:#fff; margin:0; max-width:720px;">Let's have an honest conversation.</h2>
+        <p style="font-family:'Lato',sans-serif; font-size:17px; line-height:1.8; color:#B7BEC4; margin:22px 0 48px; max-width:560px;">You talk about your life — what you're building toward, what keeps you up at night. We'll tell you what needs to shift to protect it. The first call is simply to see whether we're the right fit.</p>
+        <div class="m-grid" style="display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid rgba(255,255,255,.14); padding:34px 0;">
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#7A94A8; margin-bottom:14px;">READY TO TALK?</div>
+            <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#fff;">Get in touch today</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ DISCLOSURE ============ -->
+  <section data-screen-label="Disclosure" style="background:#FAFBFB; border-top:1px solid #E4E7EA;">
+    <div style="max-width:1280px; margin:0 auto; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:34px;">/ IMPORTANT INVESTMENT SERVICES DISCLOSURE</div>
+      <div class="disclosure-flex" style="display: flex; align-items: center; gap: 48px; flex-wrap: wrap; margin-bottom: 16px;">
+        <div style="display:flex; align-items:center; gap:32px; margin-bottom:16px;">
+        <div style="position:relative; display:inline-block;">
+          <img src="assets/regulatory-logos-v2.png" alt="Aligned Capital Partners Inc. / CIRO / CIPF" style="height:84px; object-fit:contain; display:block;">
+          <a href="https://www.alignedcapitalpartners.com/" target="_blank" aria-label="Aligned Capital Partners Inc." style="position:absolute; top:0; left:0; width:34%; height:100%;"></a>
+          <a href="https://www.ciro.ca/" target="_blank" aria-label="CIRO" style="position:absolute; top:0; left:34%; width:34%; height:100%;"></a>
+          <a href="https://www.cipf.ca/" target="_blank" aria-label="CIPF" style="position:absolute; top:0; left:68%; width:32%; height:100%;"></a>
+        </div>
+        <div style="width:1px; height:64px; background:#D6DADE; margin-left:-16px;"></div>
+        <img src="assets/ama-investments-logo-new.png" alt="AMA Investments" style="height: 116px; object-fit: contain; width: auto; margin-left:-16px;">
+      </div>
+      </div><p style="font-family:'Lato',sans-serif; font-size:14px; line-height:1.85; color:#54606A; margin:0; max-width:960px;"><br>Aligned Capital Partners Inc. (“ACPI”) is a full-service investment dealer and a member of the Canadian Investor Protection Fund (“CIPF”) and Canadian Investment Regulatory Organization (“CIRO”). Investment services are provided through AMA Investments, an approved trade name of ACPI. Only investment-related products and services are offered through ACPI/AMA Investments and covered by the CIPF. Financial Planning and Insurance services are provided through AMA Wealth. AMA Wealth is an independent company separate and distinct from ACPI/ AMA Investments.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:20px;">
+        <a href="http://www.alignedcapitalpartners.com/privacy-notice/" target="_blank" style="font-family:'Lato',sans-serif; font-size:13px; color:#7A94A8; text-decoration:underline;">ACPI Privacy Notice</a>
+        <a href="https://www.alignedcapitalpartners.com/complaint-resolution-policy/" target="_blank" style="font-family:'Lato',sans-serif; font-size:13px; color:#7A94A8; text-decoration:underline;">ACPI Complaint Resolution Policy</a>
+        <a href="https://www.ciro.ca/office-investor/know-your-advisor-advisor-report" target="_blank" style="font-family:'Lato',sans-serif; font-size:13px; color:#7A94A8; text-decoration:underline;">CIRO Know Your Advisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#070707; border-top:4px solid #7A94A8;">
+    <div class="m-grid" style="max-width:1280px; margin:0 auto; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px) clamp(20px,4vw,40px); display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:13px; margin-bottom:20px;">
+          <img src="assets/gorilla-white.png" alt="AMA Investments" style="height:52px; width:auto; object-fit:contain;">
+          <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:14px; letter-spacing:.22em; color:#fff;">AMA INVESTMENTS</span>
+        </div>
+        <p style="font-family:'Lato',sans-serif; font-size:14px; line-height:1.7; color:#8A959E; margin:0; max-width:280px;">Your strength, their future.<br>Founded 2026 · Hamilton, ON</p>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">EXPLORE</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="index.html#approach" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Approach</a>
+          <a href="index.html#clients" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Clients</a>
+          <a href="index.html#planning" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Planning</a>
+          <span style="font-family:'Lato',sans-serif; font-size:14px; color:#fff;">Investments</span>
+          <a href="index.html#media" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Media</a>
+          <a href="index.html#about" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">About</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">CONTACT</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min" target="_blank" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Book a call</a>
+          <a href="mailto:aravind@amawealth.ca" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">aravind@amawealth.ca</a>
+
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">FIRM</div>
+        <p style="font-family:'Lato',sans-serif; font-size:12.5px; line-height:1.7; color:#8A959E; margin:0;">Aravind Sithamparapillai, CFP® CIM® MBA. Financial Planner, AMA Wealth Management Group. Investment Advisor, AMA Investments (Trade Name of Aligned Capital Partners Inc.)</p>
+      </div>
+    </div>
+    <div style="max-width:1280px; margin:0 auto; padding:clamp(20px,4vw,28px) clamp(20px,6vw,56px) clamp(28px,6vw,56px);">
+      
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+        <span style="font-family:'Lato',sans-serif; font-size:12px; color:#5A636A;">© 2026 AMA Wealth Management. All rights reserved.</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5A636A;">www.amawealth.ca</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#7A94A8&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#7A94A8&quot;,&quot;#000000&quot;,&quot;#5B6B78&quot;,&quot;#8A7A6B&quot;],&quot;section&quot;:&quot;Theme&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accentColor = this.props.accentColor ?? '#7A94A8';
+    return { accentColor };
+  }
+}
+</script>
+</body>
+</html>

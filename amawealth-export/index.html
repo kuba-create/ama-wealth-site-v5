@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#7A94A8">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#7A94A8"/>
+    <circle cx="100" cy="85" r="35" fill="#0A0A0A" opacity="0.9"/>
+    <path d="M 70 140 Q 100 160 130 140" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="100" y="185" font-family="Montserrat, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#FFFFFF">AMA WEALTH</text>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<meta name="ext-resource-dependency" content="assets/midwife-1.jpg" data-resource-id="midwife1">
+<meta name="ext-resource-dependency" content="assets/midwife-option-9.png" data-resource-id="midwife9">
+<meta name="ext-resource-dependency" content="assets/business-1.jpg" data-resource-id="business1">
+<meta name="ext-resource-dependency" content="assets/business-option-11.jpg" data-resource-id="business11">
+<meta name="ext-resource-dependency" content="assets/sales-1.jpg" data-resource-id="sales1">
+<meta name="ext-resource-dependency" content="assets/sales-option-8.png" data-resource-id="sales8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FFFFFF; font-family: 'Lato', sans-serif; color: #0A0A0A; -webkit-font-smoothing: antialiased; }
+  a { color: #7A94A8; text-decoration: none; }
+  a:hover { color: #0A0A0A; }
+  .ph { display:flex; align-items:center; justify-content:center; background-image: repeating-linear-gradient(45deg,#EDEFF1 0,#EDEFF1 11px,#E4E7EA 11px,#E4E7EA 22px); border:1px solid #C0C0C0; }
+  .ph span { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.06em; color:#5B6B78; background:#fff; padding:5px 11px; border:1px solid #C0C0C0; text-align:center; }
+  .navlink:hover { color:#FFFFFF !important; }
+  .rowlink { transition: background .15s ease; }
+  @media (max-width: 1180px) and (min-width: 781px) {
+    .m-header-inner { padding: 16px 20px !important; gap: 14px !important; }
+    header nav { gap: 12px !important; }
+    header nav a.navlink { font-size: 11px !important; }
+    header nav a[href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min"] { padding: 10px 14px !important; font-size: 11px !important; white-space: nowrap; }
+  }
+  img { max-width: 100%; height: auto; }
+  .m-mobile-only { display: none; }
+  @media (max-width: 780px) {
+    body { overflow-x: hidden; }
+    .m-grid { grid-template-columns: 1fr !important; }
+    .m-divide-r { border-right: none !important; border-bottom: 1px solid #E4E7EA !important; padding-bottom: 28px !important; margin-bottom: 4px !important; }
+    .m-divide-r-dark { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.14) !important; padding-bottom: 24px !important; margin-bottom: 24px !important; }
+    .cred-box { flex-direction: column !important; align-items: flex-start !important; }
+    .m-fs-64 { font-size: 32px !important; }
+    .m-fs-44 { font-size: 27px !important; }
+    .m-fs-38 { font-size: 23px !important; }
+    .m-fs-34 { font-size: 21px !important; }
+    .m-fs-26 { font-size: 20px !important; }
+    .m-banner-logo { height: 64px !important; }
+    .m-banner-text-a { font-size: 13px !important; }
+    .m-banner-text-b { font-size: 8px !important; }
+    .m-banner-wrap { padding: 16px 20px !important; }
+    p, li, blockquote { font-size: 15px !important; }
+    .m-header-inner { padding: 10px 16px !important; gap: 8px !important; flex-wrap: wrap !important; min-height: 0 !important; }
+    .m-header-logo { flex: 1 1 auto !important; }
+    .m-header-logo img { height: 30px !important; }
+    .m-header-logo span { font-size: 12px !important; }
+    header nav { width: 100% !important; order: 3; overflow-x: auto !important; -webkit-overflow-scrolling: touch; padding: 4px 0 6px; gap: 12px !important; }
+    header nav a { flex-shrink: 0; font-size: 11px !important; }
+    .m-services-wrap { display: none !important; }
+    .m-mobile-only { display: inline-flex !important; }
+    .m-hero-img { max-height: 220px !important; }
+    .m-accordion { max-height: none !important; opacity: 1 !important; overflow: visible !important; }
+    .m-accordion-inner { transform: none !important; }
+    .m-hover-hint { display: none !important; }
+    .m-photo-circle { width: 72px !important; height: 72px !important; max-width: 72px !important; flex-shrink: 0; }
+    .m-social-row { flex-wrap: wrap !important; gap: 16px !important; justify-content: center !important; }
+    .m-social-box { width: 130px !important; height: 130px !important; }
+    .m-contact-link { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.14) !important; padding: 22px 0 !important; }
+    .gorilla-section { grid-template-columns: 1fr !important; }
+    .gorilla-section > div { grid-template-columns: 1fr !important; gap: 12px !important; }
+    .gorilla-section img { width: 72px !important; height: 72px !important; }
+  }
+  .planning-btn {
+    border: 1px solid #E4E7EA !important;
+    background: #fff !important;
+    border-radius: 6px !important;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+  }
+  .planning-btn:hover {
+    background: rgba(122, 148, 168, 0.08) !important;
+    border-color: #7A94A8 !important;
+    box-shadow: 0 4px 12px rgba(122, 148, 168, 0.1) !important;
+  }
+</style>
+</helmet>
+
+<div style="--accent: {{ accentColor }}; width:100%; overflow:clip;">
+
+  <!-- ============ BRAND BANNER ============ -->
+  <div style="background:#7A94A8; border-bottom:1px solid rgba(0,0,0,.12);">
+    <div class="m-banner-wrap" style="max-width:1280px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:0; padding:30px 40px;">
+      <img class="m-banner-logo" src="assets/gorilla-white.png" alt="AMA Wealth Management" style="height:240px; width:auto; object-fit:contain;">
+      <div style="text-align:center; margin-top:-16px;">
+        <div class="m-banner-text-a" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:26px; line-height:1.4; letter-spacing:.34em; color:#fff; padding-left:.34em; white-space:nowrap;">AMA WEALTH</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STICKY HEADER ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:#0A0A0A; border-bottom:1px solid rgba(255,255,255,.08); flex-shrink:0; min-height:0;">
+    <div class="m-header-inner" style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:18px 40px; min-height:76px; box-sizing:border-box;">
+      <a href="#top" onClick="{{ goTop }}" class="m-header-logo" style="display:flex; align-items:center; gap:13px; cursor:pointer; flex-shrink:0;">
+        <img src="assets/gorilla-white.png" alt="AMA Wealth Management" style="height:40px; width:auto; object-fit:contain;">
+        <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:14px; letter-spacing:.24em; color:#fff; white-space:nowrap;">AMA WEALTH</span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:22px; white-space:nowrap;">
+        <a href="#approach" onClick="{{ goApproach }}" class="navlink" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Approach</a>
+        <a href="#clients" onClick="{{ goClients }}" class="navlink" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Clients</a>
+        <a href="#planning" onClick="{{ goPlanning }}" class="navlink" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Planning</a>
+        <a href="investments.html" class="navlink" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Investments</a>
+        <a href="#media" onClick="{{ goMedia }}" class="navlink" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1em; color:#C7CDD2;">Media</a>
+        <a href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min" target="_blank" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:12px; letter-spacing:.08em; color:#0A0A0A; background:var(--accent,#7A94A8); padding:12px 20px;">Book an intro call →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- container with ledger side rails -->
+  <main id="top" style="max-width:1280px; margin:0 auto; border-left:1px solid #E4E7EA; border-right:1px solid #E4E7EA;">
+
+    <!-- ============ 01 · HERO ============ -->
+    <section data-screen-label="Hero" class="m-grid" style="display:grid; grid-template-columns:1.15fr .85fr; border-bottom:1px solid #E4E7EA;">
+      <div class="m-divide-r" style="padding:clamp(40px,9vw,104px) clamp(20px,6vw,56px); border-right:1px solid #E4E7EA;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:30px;">EST. 2026 / HAMILTON, ON / 01</div>
+        <h1 class="m-fs-64" style="font-family:'Montserrat',sans-serif; font-weight:400; font-size:64px; line-height:1.06; letter-spacing:-.02em; color:#0A0A0A; margin:0;">Quiet strength,<br>built around <span style="font-style:italic; font-weight:300;">family.</span></h1>
+        <p style="font-family:'Lato',sans-serif; font-size:18px; line-height:1.8; color:#54606A; max-width:520px; margin:34px 0 0;">You're already doing the hard part — building, saving, showing up for your family. We make sure the financials run on autopilot, so you can spend your energy on the things you can't get back.</p>
+        <div style="display:flex; gap:16px; margin-top:42px;">
+          <a href="#contact" onClick="{{ goContact }}" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; letter-spacing:.08em; color:#fff; background:#0A0A0A; padding:15px 28px;">Book an intro call</a>
+          <a href="#approach" onClick="{{ goApproach }}" style="cursor:pointer; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; letter-spacing:.08em; color:#0A0A0A; padding:15px 24px; border:1px solid #C0C0C0;">Our approach</a>
+        </div>
+      </div>
+      <div style="background:#EDF1F4; display:flex; align-items:center; justify-content:center; padding:40px;">
+        <sc-if value="{{ showGorilla }}" hint-placeholder-val="{{ true }}">
+          <img class="m-hero-img" src="assets/gorilla-circle.png" alt="AMA Wealth" style="width:86%; object-fit:contain;">
+        </sc-if>
+        <sc-if value="{{ showPhoto }}">
+          <div class="ph" style="width:100%; height:420px;"><span>hero image — Aravind / family, 4:5</span></div>
+        </sc-if>
+      </div>
+    </section>
+
+    <!-- ============ 02 · OUR APPROACH ============ -->
+    <section id="approach" data-screen-label="Our Approach" style="scroll-margin-top:82px;">
+      <div class="m-grid" style="display:grid; grid-template-columns:.85fr 1.15fr; border-bottom:1px solid #E4E7EA;">
+        <div class="m-divide-r" style="padding: clamp(36px,8vw,88px) clamp(20px,6vw,56px); border-right: 1px solid #E4E7EA; background: #FAFBFB;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:20px;">/ OUR APPROACH / 02</div>
+          <h2 class="m-fs-34" style="font-family: 'Montserrat',sans-serif; font-weight: 500; font-size: 34px; line-height: 1.2; color: #0A0A0A; margin: 0;">Understand your values, <br>Design your plan, <br>Take action.</h2>
+        </div><div style="padding: clamp(36px,8vw,88px) clamp(20px,6vw,56px);">
+          
+          <p style="font-family: Lato; font-size: 17px; line-height: 1.85; color: #FFFFFF; margin: 0 0 20px"><span style="color: #54606A; font-family: Lato; font-size: 17px; letter-spacing: 0.2px">Most people have experienced their finances in the wrong order. Chances are you have had the experience of being told you need to save and invest your money without a clear idea of what you are saving for.</span><br style="color: rgb(68, 71, 70); font-family: &quot;Google Sans&quot;, Roboto, sans-serif; font-size: 14px; letter-spacing: 0.2px;"><br style="color: rgb(68, 71, 70); font-family: &quot;Google Sans&quot;, Roboto, sans-serif; font-size: 14px; letter-spacing: 0.2px;"><span style="color: #54606A; font-family: &quot;Google Sans&quot;, Roboto, sans-serif; font-size: 17px; letter-spacing: 0.2px">When you work with us - we take the time to understand who you are and the values that drive you. From there - we help you design a plan that will help you live out those values and then work with you to actually implement the plan.</span></p>
+        </div>
+        
+      </div>
+
+      <!-- statement band -->
+      <div style="background: #7A94A8; padding: clamp(40px,9vw,96px) clamp(20px,6vw,56px); text-align: center; position: relative">
+        <p style="font-family:'Montserrat',sans-serif; font-weight:300; font-size:40px; line-height:1.34; letter-spacing:-.01em; color:#fff; max-width:960px; margin:0 auto;">Strength isn't about being power or money.<br>It's about <span style="color: rgb(10, 10, 10); font-weight: 600;">conviction.</span></p>
+        <p style="font-family: 'Lato',sans-serif; font-size: 16px; line-height: 1.6; color: rgba(255,255,255,.85); max-width: 720px; margin: 20px auto 0">It's easier to build your finances when you know WHY you are taking those actions.</p>
+      </div>
+    </section>
+
+    <!-- ============ 03 · CLIENTS WE SERVE ============ -->
+    <section id="clients" data-screen-label="Clients We Serve" style="scroll-margin-top:82px; border-top:1px solid #E4E7EA; border-bottom:1px solid #E4E7EA;">
+      <div style="padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px) clamp(20px,4vw,40px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ CLIENTS WE SERVE / 03</div>
+        <h2 class="m-fs-38" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:38px; line-height:1.15; color:#0A0A0A; margin:0; max-width:820px;">Three different lives, one quiet worry: something important is slipping through.</h2>
+        <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:20px 0 0; max-width:760px;">Our clients' finances have more moving parts than they have time to track — and the fear is that something is being missed. Our job is to make sure nothing is, and to be the connective tie between you and your accountant, lawyer, and everyone else in your corner. With a special focus on women who see wealth as an enabler of family, purpose, and legacy.</p>
+      </div>
+
+      <!-- 3 columns side by side: image on top, click-to-expand text below, each independent -->
+      <div class="m-grid" style="border-top:1px solid #E4E7EA; border-bottom:1px solid #E4E7EA; display:grid; grid-template-columns:repeat(3,1fr);">
+
+        <!-- Midwives -->
+        <div class="m-divide-r" style="border-right:1px solid #E4E7EA; display:flex; flex-direction:column; cursor:pointer;" onClick="{{ toggleClientMidwives }}">
+          <div style="position:relative; height:260px; overflow:hidden;">
+            <sc-if value="{{ hasMidwifePhoto }}" hint-placeholder-val="{{ false }}"><img src="{{ midwifePhotoSrc }}" alt="Midwife" style="width:100%; height:100%; object-fit:cover; filter:{{ clientMidwivesFilter }}; transition:filter .45s ease;"></sc-if>
+            <sc-if value="{{ noMidwifePhoto }}" hint-placeholder-val="{{ true }}"><div class="ph" style="height:100%;"><span>midwife photo</span></div></sc-if>
+            <div style="position:absolute; inset:0; background:#7A94A8; mix-blend-mode:multiply; opacity:{{ clientMidwivesOverlay }}; transition:opacity .45s ease; pointer-events:none;"></div>
+            <div style="position:absolute; inset:0; background:#1E4E7A; opacity:0; transition:opacity .3s ease;" style-hover="opacity: 0.22;"></div>
+            <div style="position:absolute; left:0; right:0; bottom:0; padding:20px 24px; background:linear-gradient(to top, rgba(10,10,10,.75), transparent);">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:rgba(255,255,255,.8);">01</span>
+              <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:21px; line-height:1.2; color:#FFFFFF; margin:6px 0 0;">Midwives</h3>
+            </div>
+          </div>
+          <div style="all:unset; box-sizing:border-box; display:flex; flex-direction:column; width:100%; flex:1; padding:28px 32px; background:rgba(122,148,168,.06); border-top:2px solid var(--accent,#7A94A8);">
+            <div style="width:100%; display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; color:#8A959E; text-transform:uppercase;">Click to expand</span>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--accent,#7A94A8); transform:{{ clientMidwivesArrow }}; transition:transform .3s ease; flex-shrink:0;">+</span>
+            </div>
+            <div style="max-height:{{ clientMidwivesMaxHeight }}; opacity:{{ clientMidwivesOpacity }}; overflow:hidden; transition:max-height .45s ease, opacity .35s ease; text-align:left;">
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.75; color:#54606A; margin:0 0 14px;">Having had three children delivered by midwives, Aravind has learned first-hand how unique the personal finances of midwives can be — from group benefit plans in Ontario to the different compensation styles out West. If you're a midwife looking for someone who understands what it means to get paid "per birth / BCC" and who can walk you through the complexities of planning while self-employed, Aravind has you covered.</p>
+              <a href="https://www.facebook.com/" target="_blank" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:12px; color:var(--accent,#7A94A8); border-bottom:1px solid var(--accent,#7A94A8); padding-bottom:2px;">The Financially Empowered Midwife ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Incorporated -->
+        <div class="m-divide-r" style="border-right:1px solid #E4E7EA; display:flex; flex-direction:column; cursor:pointer;" onClick="{{ toggleClientIncorporated }}">
+          <div style="position:relative; height:260px; overflow:hidden;">
+            <sc-if value="{{ hasBusinessPhoto }}" hint-placeholder-val="{{ false }}"><img src="{{ businessPhotoSrc }}" alt="Incorporated Business Owner" style="width:100%; height:100%; object-fit:cover; filter:{{ clientIncorporatedFilter }}; transition:filter .45s ease;"></sc-if>
+            <sc-if value="{{ noBusinessPhoto }}" hint-placeholder-val="{{ true }}"><div class="ph" style="height:100%;"><span>business photo</span></div></sc-if>
+            <div style="position:absolute; inset:0; background:#7A94A8; mix-blend-mode:multiply; opacity:{{ clientIncorporatedOverlay }}; transition:opacity .45s ease; pointer-events:none;"></div>
+            <div style="position:absolute; inset:0; background:#1E4E7A; opacity:0; transition:opacity .3s ease;" style-hover="opacity: 0.22;"></div>
+            <div style="position:absolute; left:0; right:0; bottom:0; padding:20px 24px; background:linear-gradient(to top, rgba(10,10,10,.75), transparent);">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:rgba(255,255,255,.8);">02</span>
+              <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:21px; line-height:1.2; color:#FFFFFF; margin:6px 0 0;">Incorporated Business Owners</h3>
+            </div>
+          </div>
+          <div style="all:unset; box-sizing:border-box; display:flex; flex-direction:column; width:100%; flex:1; padding:28px 32px; background:rgba(122,148,168,.06); border-top:2px solid var(--accent,#7A94A8);">
+            <div style="width:100%; display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; color:#8A959E; text-transform:uppercase;">Click to expand</span>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--accent,#7A94A8); transform:{{ clientIncorporatedArrow }}; transition:transform .3s ease; flex-shrink:0;">+</span>
+            </div>
+            <div style="max-height:{{ clientIncorporatedMaxHeight }}; opacity:{{ clientIncorporatedOpacity }}; overflow:hidden; transition:max-height .45s ease, opacity .35s ease; text-align:left;">
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.75; color:#54606A; margin:0 0 18px;">Incorporated owners live with the business and the personal balance sheet tangled together — yet most advisors only ever look at one half. Aravind sees the whole picture as one connected plan, and acts as the connective tie between your accountant, lawyer, and the other professionals in your corner, so both sides actually move together instead of in silos.</p>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.08em; color:#8A959E; margin-bottom:12px;">TYPICAL PLANNING CHALLENGES</div>
+              <ul style="margin:0; padding:0; list-style:none; display:grid; gap:10px;">
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Investment planning and tax efficiency inside vs. outside the corporation</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Capital gains and sale-of-business issues</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Ideal structures for preserving family wealth for the next generation</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Compensation for business owners — salary or dividends?</li>
+              </ul>
+              <p style="font-family:'Lato',sans-serif; font-style:italic; font-size:13.5px; line-height:1.6; color:#54606A; margin:18px 0 0;">If you want someone who can tell you not only what the best option is, but how and why it makes sense — with proof — then look no further.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sales -->
+        <div style="display:flex; flex-direction:column; cursor:pointer;" onClick="{{ toggleClientSales }}">
+          <div style="position:relative; height:260px; overflow:hidden;">
+            <sc-if value="{{ hasSalesPhoto }}" hint-placeholder-val="{{ false }}"><img src="{{ salesPhotoSrc }}" alt="Sales Professional" style="width:100%; height:100%; object-fit:cover; object-position:{{ salesPhotoPosition }}; filter:{{ clientSalesFilter }}; transition:filter .45s ease;"></sc-if>
+            <sc-if value="{{ noSalesPhoto }}" hint-placeholder-val="{{ true }}"><div class="ph" style="height:100%;"><span>sales photo</span></div></sc-if>
+            <div style="position:absolute; inset:0; background:#7A94A8; mix-blend-mode:multiply; opacity:{{ clientSalesOverlay }}; transition:opacity .45s ease; pointer-events:none;"></div>
+            <div style="position:absolute; inset:0; background:#1E4E7A; opacity:0; transition:opacity .3s ease;" style-hover="opacity: 0.22;"></div>
+            <div style="position:absolute; left:0; right:0; bottom:0; padding:20px 24px; background:linear-gradient(to top, rgba(10,10,10,.75), transparent);">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:rgba(255,255,255,.8);">03</span>
+              <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:21px; line-height:1.2; color:#FFFFFF; margin:6px 0 0;">Sales Professionals &amp; Directors</h3>
+            </div>
+          </div>
+          <div style="all:unset; box-sizing:border-box; display:flex; flex-direction:column; width:100%; flex:1; padding:28px 32px; background:rgba(122,148,168,.06); border-top:2px solid var(--accent,#7A94A8);">
+            <div style="width:100%; display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; color:#8A959E; text-transform:uppercase;">Click to expand</span>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--accent,#7A94A8); transform:{{ clientSalesArrow }}; transition:transform .3s ease; flex-shrink:0;">+</span>
+            </div>
+            <div style="max-height:{{ clientSalesMaxHeight }}; opacity:{{ clientSalesOpacity }}; overflow:hidden; transition:max-height .45s ease, opacity .35s ease; text-align:left;">
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.75; color:#54606A; margin:0 0 18px;">Having been a Sales Professional for a publicly traded company, Aravind has navigated the planning complexities that come from high-pressure, high-reward corporate environments. His clients are busy being successful and managing family life — smart enough to handle their finances, but they recognize the value of a guide walking alongside them, giving some of that precious time back.</p>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.08em; color:#8A959E; margin-bottom:12px;">TYPICAL PLANNING CHALLENGES</div>
+              <ul style="margin:0; padding:0; list-style:none; display:grid; gap:10px;">
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Tax deductibility and associated planning for travelling reps</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Variable commissions, bonuses, and tax-bracket planning</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>RSUs and stock-option planning &amp; execution</li>
+                <li style="font-family:'Lato',sans-serif; font-size:13.5px; line-height:1.55; color:#3A4750; padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:var(--accent,#7A94A8);">—</span>Group benefit / RRSP review and projecting ideal retirement goals</li>
+              </ul>
+              <p style="font-family:'Lato',sans-serif; font-style:italic; font-size:13.5px; line-height:1.6; color:#54606A; margin:18px 0 0;">It's refreshing to have someone who has been where you are. Aravind speaks from experience while tailoring solutions to your particular needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div style="padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:34px;">/ IN THEIR WORDS</div>
+        <div class="m-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px;">
+          <figure style="margin:0; border-top:2px solid #0A0A0A; padding-top:24px;">
+            <blockquote style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.75; color:#3A4750; margin:0 0 20px;">"Aravind has gone above and beyond to understand my health benefits as a new midwife with Type 1 Diabetes and all that entails financially. He presents everything in an evidence-based, easy-to-understand way and has empowered me to make my own decisions. Aravind is truly fantastic."</blockquote>
+            <figcaption style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">Emily Steadman<span style="display:block; font-weight:400; color:#8A959E; margin-top:3px;">Midwife</span></figcaption>
+          </figure>
+          <figure style="margin:0; border-top:2px solid #0A0A0A; padding-top:24px;">
+            <blockquote style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.75; color:#3A4750; margin:0 0 20px;">"Aravind took the time to understand my unique situation as a midwife and involved my accountant so we could work as a team on the tax implications. The clarity he provided has helped my family be proactive, and gives me confidence I can retire comfortably."</blockquote>
+            <figcaption style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">Charlotte Baici<span style="display:block; font-weight:400; color:#8A959E; margin-top:3px;">Former Ontario Midwife</span></figcaption>
+          </figure>
+          <figure style="margin:0; border-top:2px solid #0A0A0A; padding-top:24px;">
+            <blockquote style="font-family:'Lato',sans-serif; font-size:15px; line-height:1.75; color:#3A4750; margin:0 0 20px;">"After a disappointing experience with a previous firm, trusting our advisor became a top priority. Aravind quickly earned our trust through transparency and excellent communication, always respecting our decisions without pressure. We're extremely satisfied with the entire team at AMA."</blockquote>
+            <figcaption style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">Bethany Galster, RM<span style="display:block; font-weight:400; color:#8A959E; margin-top:3px;">Registered Midwife</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · PLANNING SERVICES ============ -->
+    <section id="planning" data-screen-label="Planning Services" style="scroll-margin-top:82px; border-bottom:1px solid #E4E7EA; padding:clamp(28px,6vw,48px) clamp(20px,6vw,56px);">
+      <div style="border:1px solid #E4E7EA; border-radius:6px; box-shadow:{{ planningCardShadow }}; transition:box-shadow .2s ease; overflow:hidden;">
+        <button onClick="{{ togglePlanning }}" className="planning-btn" style="all:unset; box-sizing:border-box; cursor:pointer; width:100%; display:flex; align-items:flex-start; gap:32px; padding:clamp(28px,5vw,40px) clamp(20px,6vw,56px);">
+          <div style="display:flex; flex-direction:column; gap:8px; flex:1; min-width:300px;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8);"><strong>04</strong> — PLANNING SERVICES</div>
+            <h2 class="m-fs-38" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:38px; line-height:1.15; color:#0A0A0A; margin:0;">Planning first, always.</h2>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:12px 0 0; max-width:640px;">This is where the real value lives — the decisions that determine whether the wealth actually does what you need it to.</p>
+            <div style="font-family:'Lato',sans-serif; font-size:14px; color:#7A94A8; margin-top:12px;">+ click to see more</div>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--accent,#7A94A8); transform:{{ planningArrow }}; transition:transform .3s ease; flex-shrink:0; margin-top:2px;">+</span>
+        </button>
+        <div class="m-accordion" style="max-height:{{ planningMaxHeight }}; opacity:{{ planningOpacity }}; overflow:hidden; transition:max-height .45s ease, opacity .35s ease; background:#7A94A8; padding-top:{{ planningOpen ? '0' : '32px' }};">
+          <div class="m-accordion-inner" style="padding:clamp(24px,5vw,32px) clamp(20px,6vw,56px) clamp(32px,6vw,64px); transform:{{ planningTranslate }}; transition:transform .45s cubic-bezier(.22,1,.36,1);">
+            <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.8; color:rgba(255,255,255,.75); margin:0 0 28px; max-width:640px;">Delivered through AMA Wealth.</p>
+            <div class="m-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px 40px;">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">01</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Insurance &amp; risk management</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Life, disability &amp; critical illness coverage built around your actual exposure — not a generic formula.</p>
+              </div>
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">02</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Retirement &amp; income projections</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Clear projections on when you can step back, and what that income actually looks like.</p>
+              </div>
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">03</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Tax planning &amp; efficiency</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Structuring income, accounts, and timing to keep more of what you earn.</p>
+              </div>
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">04</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Estate &amp; legacy planning</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Making sure what you've built transfers the way you intend, without unnecessary cost or delay.</p>
+              </div>
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">05</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Business succession planning</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Corporate structure, buy-sell agreements, and a clear exit built years in advance.</p>
+              </div>
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.65); margin-bottom:10px;">06</div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16.5px; color:#FFFFFF; margin:0 0 8px;">Group benefit plans</h4>
+                <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.85); margin:0;">Benefit &amp; pension design for incorporated businesses and their teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 · MEDIA ============ -->
+    <section id="media" data-screen-label="Media" style="scroll-margin-top:82px; border-bottom:1px solid #E4E7EA;">
+      <div style="padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px) clamp(20px,4vw,40px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ MEDIA / 05</div>
+        <h2 class="m-fs-38" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:38px; line-height:1.15; color:#0A0A0A; margin:0; max-width:760px;">Reading, listening &amp; appearances.</h2>
+      </div>
+      <div class="m-grid" style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #E4E7EA;">
+        <!-- Featured / links -->
+        <div class="m-divide-r" style="padding:clamp(28px,6vw,52px) clamp(20px,6vw,56px); border-right:1px solid #E4E7EA;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; color:#8A959E; margin-bottom:24px;">FEATURED &amp; RESOURCES</div>
+          <a href="https://rationalreminder.ca/" target="_blank" class="rowlink" style="display:block; padding:22px 0; border-top:1px solid #E4E7EA;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px;">
+              <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:18px; color:#0A0A0A;">The Rational Reminder Podcast</span>
+              <span style="color:var(--accent,#7A94A8); font-size:15px;">↗</span>
+            </div>
+            <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:#54606A; margin:8px 0 0; max-width:440px;">Evidence-based investing and personal finance — a favourite resource Aravind returns to and recommends to clients.</p>
+          </a>
+          <a href="https://moneyscope.ca/" target="_blank" class="rowlink" style="display:block; padding:22px 0; border-top:1px solid #E4E7EA;">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px;">
+              <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:18px; color:#0A0A0A;">Money Scope Podcast</span>
+              <span style="color:var(--accent,#7A94A8); font-size:15px;">↗</span>
+            </div>
+            <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:#54606A; margin:8px 0 0; max-width:440px;">A financial planning focused podcast geared to Canadian Physicians and incorporated business owners.</p>
+          </a>
+        </div>
+        <!-- Bookshelf -->
+        <div style="padding:clamp(28px,6vw,52px) clamp(20px,6vw,56px); background:#FAFBFB;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; color:#8A959E; margin-bottom:24px;">ON THE BOOKSHELF</div>
+          <a href="https://thewealthybarber.com/book/" target="_blank" class="m-grid" style="display:grid; grid-template-columns:88px 1fr; gap:22px; padding:22px 0; border-top:1px solid #E4E7EA; align-items:start;">
+            <img src="./oip-mrmextko-px8c.webp" alt="The Wealthy Barber" style="width:88px; height:120px; object-fit:cover;">
+            <div>
+              <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:17px; color:#0A0A0A;">The Wealthy Barber <span style="color:var(--accent,#7A94A8);">↗</span></div>
+              <div style="font-family:'Lato',sans-serif; font-size:13px; color:#8A959E; margin:2px 0 8px;">David Chilton</div>
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.7; color:#54606A; margin:0;">The Canadian classic on common-sense personal finance — simple, story-driven lessons on saving and building wealth steadily over time.</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <!-- Socials -->
+      <div style="padding:clamp(24px,5vw,40px) clamp(20px,6vw,56px) clamp(24px,5vw,52px); border-top:1px solid #E4E7EA;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; color:#8A959E; margin-bottom:18px;">FOLLOW ALONG</div>
+
+        <a href="https://aravindsithamparapillai.substack.com/" target="_blank" class="rowlink" style="display:flex; align-items:center; gap:28px; padding:28px 32px; margin-bottom:14px; background:rgba(122,148,168,.1); border:1px solid rgba(122,148,168,.3); border-radius:8px;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: url(&quot;./unnamed-3--mrmgpks0-9z8h.png&quot;) center / cover no-repeat; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            
+          </div>
+          <span style="flex:1;">
+            <span style="display:block; font-family:'Montserrat',sans-serif; font-weight:600; font-size:22px; color:#0A0A0A;">Substack</span>
+            <span style="display:block; font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.6; color:#54606A; margin-top:5px; max-width:520px;">Follow Aravind's numbers on Substack for smart, data-backed financial planning.</span>
+          </span>
+          <span style="color:var(--accent,#7A94A8); font-size:20px;">↗</span>
+        </a>
+
+        <div class="m-social-row" style="display:flex; justify-content:center; gap:32px;">
+          <a href="https://www.instagram.com/" target="_blank" class="rowlink m-social-box" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:150px; height:150px; border:1px solid #E4E7EA; border-radius:8px; text-align:center; padding:14px;">
+            <img src="assets/instagram-icon.png" alt="Instagram" style="width:88px; height:88px; object-fit:contain;">
+            <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">Instagram <span style="display:block; font-weight:400; color:#8A959E; font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:2px;">@aravind.sith.cfp</span></span>
+          </a>
+          <a href="https://x.com/" target="_blank" class="rowlink m-social-box" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:150px; height:150px; border:1px solid #E4E7EA; border-radius:8px; text-align:center; padding:14px;">
+            <img src="assets/x-icon.png" alt="X (Twitter)" style="width:88px; height:88px; object-fit:contain;">
+            <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">X (Twitter) <span style="display:block; font-weight:400; color:#8A959E; font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:2px;">@AravindSitham</span></span>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="rowlink m-social-box" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:150px; height:150px; border:1px solid #E4E7EA; border-radius:8px; text-align:center; padding:14px;">
+            <img src="assets/linkedin-icon.png" alt="LinkedIn" style="width:88px; height:88px; object-fit:contain;">
+            <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">LinkedIn <span style="display:block; font-weight:400; color:#8A959E; font-family:'IBM Plex Mono',monospace; font-size:11px; margin-top:2px;">Aravind S.</span></span>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ============ 06 · ABOUT US ============ -->
+    <section id="about" data-screen-label="About Us" style="scroll-margin-top:82px; border-bottom:1px solid #E4E7EA;">
+      <div class="m-grid" style="display:grid; grid-template-columns:.85fr 1.15fr; border-bottom:1px solid #E4E7EA;">
+        <div class="m-divide-r" style="padding:clamp(36px,8vw,88px) clamp(20px,6vw,56px); border-right:1px solid #E4E7EA; background:#FAFBFB;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:20px;">/ ABOUT US / 06</div>
+          <h2 class="m-fs-34" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:34px; line-height:1.2; color:#0A0A0A; margin:0;">Money as an enabler — not a scoreboard.</h2>
+        </div>
+        <div style="padding:clamp(36px,8vw,88px) clamp(20px,6vw,56px);">
+          <p style="font-family:'Lato',sans-serif; font-size:17px; line-height:1.85; color:#54606A; margin:0;">Money here isn't a scoreboard. It's protection, peace of mind, and a legacy for the people behind the wealth. The question we keep asking isn't how much you're building — it's what you're building toward.</p>
+        </div>
+      </div>
+
+      <!-- name + symbol grid -->
+      <div class="m-grid" style="display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid #E4E7EA; align-items:stretch;">
+        <div class="m-divide-r" style="padding:clamp(32px,7vw,70px) clamp(20px,6vw,56px); border-right:1px solid #E4E7EA; display:flex; flex-direction:column;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:18px;">/ THE NAME</div>
+          <div style="background:#7A94A8; border-radius:8px; padding:28px 30px; flex:1;">
+            <h3 class="m-fs-26" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:26px; color:#FFFFFF; margin:0 0 14px;">Ari, Mila &amp; Asa</h3>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:rgba(255,255,255,.9); margin:0;">AMA is named for my three children — a reminder that everything here begins with family. It also carries a standing invitation: <em>Ask Me Anything.</em> Bring the relocation offer, the stock options, the group plan, the succession question — you never need the right vocabulary for it. Making sense of it is our job, not yours.</p>
+          </div>
+        </div>
+        <div class="gorilla-section" style="padding:clamp(32px,7vw,70px) clamp(20px,6vw,56px); display:flex; flex-direction:column;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:18px;">/ THE SYMBOL</div>
+          <div style="background:#7A94A8; border-radius:8px; padding:28px 30px; flex:1;">
+            <div style="display:grid; grid-template-columns:1fr 96px; gap:16px; align-items:start;">
+              <div style="display:flex; flex-direction:column;">
+                <h3 class="m-fs-26" style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:26px; color:#FFFFFF; margin:0 0 14px;">The Gorilla Family</h3>
+                <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:rgba(255,255,255,.9); margin:0;">A silverback leads with quiet authority — protective, steady, strong without ever needing to prove it.<br><br>Gorillas move as a family, and so do we.</p>
+              </div>
+              <img src="assets/gorilla.png" alt="Gorilla" style="width:96px; height:96px; object-fit:contain; opacity:.9; flex-shrink:0;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div style="padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px) clamp(20px,4vw,40px); border-bottom:1px solid #E4E7EA;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ BIO</div>
+        <h2 class="m-fs-38" style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:38px; line-height:1.15; color:#0A0A0A; margin:0; max-width:760px;">Aravind Sithamparapillai</h2>
+        <p style="font-family:'Montserrat',sans-serif; font-weight:500; font-size:15px; letter-spacing:.02em; color:#54606A; margin:14px 0 0;">CFP® &nbsp;·&nbsp; CIM® &nbsp;·&nbsp; MBA</p>
+      </div>
+      <div class="m-grid" style="display:grid; grid-template-columns:.72fr 1.28fr; border-bottom:1px solid #E4E7EA;">
+        <!-- left: portrait + credentials -->
+        <div class="m-divide-r" style="padding:clamp(28px,6vw,56px) clamp(20px,5vw,56px); border-right:1px solid #E4E7EA; background:#FAFBFB;">
+          
+          <img src="assets/aravind-sweater-hires.jpg" alt="Aravind Sithamparapillai" style="width: 286px; height: 367px; object-fit: cover; object-position: center top; margin-bottom: 32px; border: 1px solid #C0C0C0"><p style="font-family:'Lato',sans-serif; font-size:14.5px; line-height:1.75; color:#54606A; margin:0 0 28px;">Investment Advisor, AMA Securities (Trade Name of Aligned Capital Partners Inc.)</p>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; color:#8A959E; margin-bottom:14px;">CREDENTIALS</div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div class="cred-box" style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border:1px solid #D6DADE; background:#fff; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">MBA</div>
+            <div class="cred-box" style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border:1px solid #D6DADE; background:#fff; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">CIM® — Canadian Securities Institute</div>
+            <a href="https://www.fpcanada.ca/planner-directory/planner-detail/1775029" target="_blank" class="cred-box" style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border:1px solid #D6DADE; background:#fff; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; color:#0A0A0A;">CFP® — FP Canada <span style="color:var(--accent,#7A94A8);">↗</span></a>
+          </div>
+        </div>
+        <!-- right: personal statement -->
+        <div style="padding:clamp(28px,6vw,56px) clamp(20px,5vw,56px);">
+          <p style="font-family:'Lato',sans-serif; font-size:17px; line-height:1.85; color:#54606A; margin:0 0 40px; max-width:640px;">There are a few things that help describe who I am. They may sound like simple traits, but at the core, they make up the foundation of my personality — so you know exactly what kind of person I am when I stand in front of you.</p>
+
+          <div class="m-grid" style="display:grid; grid-template-columns:150px 1fr; gap:40px; padding:32px 0; border-top:1px solid #E4E7EA;">
+            <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#0A0A0A; margin:0;">Competition</h3>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:0;">All sports have a winner. In business, you compete with the other firms in your industry — and while there may be no "losers," the "winners" often enjoy higher market share, higher profits, a higher chance of survival. On an individual level I strive to compete in much of what I do, whether against myself and my personal records or against my peers, in the workplace or on a sports field.</p>
+          </div>
+
+          <div class="m-grid" style="display:grid; grid-template-columns:150px 1fr; gap:40px; padding:32px 0; border-top:1px solid #E4E7EA;">
+            <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#0A0A0A; margin:0;">Teamwork</h3>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:0;">This may seem like a contradiction, but there is no satisfaction higher than winning as a team. When my soccer team won a tournament, the sheer joy of celebrating our hard-earned victory together — very few moments come close. When a colleague struggles and I struggle alongside them, and together we make it through, the relief and celebration is much sweeter shared than taken alone.</p>
+          </div>
+
+          <div class="m-grid" style="display:grid; grid-template-columns:150px 1fr; gap:40px; padding:32px 0; border-top:1px solid #E4E7EA; border-bottom:1px solid #E4E7EA;">
+            <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#0A0A0A; margin:0;">Relationships</h3>
+            <p style="font-family:'Lato',sans-serif; font-size:16px; line-height:1.8; color:#54606A; margin:0;">To some, networking has become a dirty word. To me it has always meant the same thing: making friends and helping each other out. It's that split second of happiness when you run into an old friend in a place you least expected — the feeling of walking into a familiar room and knowing you aren't alone.</p>
+          </div>
+
+          <p style="font-family:'Montserrat',sans-serif; font-weight:400; font-style:italic; font-size:20px; line-height:1.6; color:#0A0A0A; margin:40px 0 0; max-width:680px;">"Wherever I go, I want to be remembered — not for showing up or doing the minimum, but for being the best, for caring and helping others, and most importantly, for having a positive impact on those who choose to be around me."</p>
+        </div>
+      </div>
+
+      <!-- The Team -->
+      <div style="padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:28px;">/ THE TEAM</div>
+        <div class="m-grid" style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #E4E7EA;">
+          <!-- Kuba -->
+          <div class="m-grid m-divide-r" style="display:grid; grid-template-columns:110px 1fr; gap:26px; padding:36px 40px 36px 0; border-right:1px solid #E4E7EA; align-items:center;">
+            <img src="./kuba.png" alt="Kuba Armstrong" style="width:110px; height:110px; border-radius:50%; object-fit:cover; object-position:center;">
+            <div>
+              <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:20px; color:#0A0A0A; margin:0;">Kuba Armstrong</h3>
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; color:#54606A; margin:6px 0 12px;">Administrative Assistant</p>
+              <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+                <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:11.5px; letter-spacing:.02em; color:#54606A; border:1px solid #E4E7EA; padding:6px 12px;">CSC</span>
+                <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:11.5px; letter-spacing:.02em; color:#54606A; border:1px solid #E4E7EA; padding:6px 12px;">BCom</span>
+              </div>
+            </div>
+          </div>
+          <!-- Mikayla -->
+          <div class="m-grid" style="display:grid; grid-template-columns:110px 1fr; gap:26px; padding:36px 0 36px 40px; align-items:center;">
+            <img src="./mikayla.png" alt="Mikayla Sithamparapillai" style="width:110px; height:110px; border-radius:50%; object-fit:cover; object-position:center 20%;">
+
+            <div>
+              <h3 style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:20px; color:#0A0A0A; margin:0;">Mikayla Sithamparapillai</h3>
+              <p style="font-family:'Lato',sans-serif; font-size:14.5px; color:#54606A; margin:6px 0 0;">Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISCLOSURE ============ -->
+
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" data-screen-label="Contact" style="scroll-margin-top:82px; background:#0A0A0A;">
+      <div style="padding:clamp(36px,8vw,80px) clamp(20px,6vw,56px);">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:var(--accent,#7A94A8); margin-bottom:22px;">/ CONTACT</div>
+        <h2 class="m-fs-44" style="font-family:'Montserrat',sans-serif; font-weight:400; font-size:44px; line-height:1.12; color:#fff; margin:0; max-width:720px;">Let's have an honest conversation.</h2>
+        <p style="font-family:'Lato',sans-serif; font-size:17px; line-height:1.8; color:#B7BEC4; margin:22px 0 48px; max-width:560px;">You talk about your life — what you're building toward, what keeps you up at night. We'll tell you what needs to shift to protect it. The first call is simply to see whether we're the right fit.</p>
+        <div class="m-grid" style="display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:0; border-top:1px solid rgba(255,255,255,.14);">
+          <a href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min" target="_blank" class="m-contact-link" style="padding:34px 0; border-right:1px solid rgba(255,255,255,.14); padding-right:24px;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#7A94A8; margin-bottom:14px;">BOOK ONLINE</div>
+            <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#fff;">Book an intro call →</div>
+            <div style="font-family:'Lato',sans-serif; font-size:13px; color:#8A959E; margin-top:6px;">30 minutes · via Calendly</div>
+          </a>
+          <a href="mailto:aravind@amawealth.ca" class="m-contact-link" style="padding:34px 0 34px 32px; border-right:1px solid rgba(255,255,255,.14); padding-right:24px;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#7A94A8; margin-bottom:14px;">EMAIL</div>
+            <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#fff;">aravind@amawealth.ca</div>
+          </a>
+          <div style="padding:34px 0 34px 32px;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#7A94A8; margin-bottom:14px;">READY TO TALK?</div>
+            <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:19px; color:#fff;">Get in touch today</div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ TAGLINE BAND ============ -->
+  <div style="background:#7A94A8; text-align:center; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px);">
+    <p style="font-family:'Montserrat',sans-serif; font-weight:300; font-size:34px; letter-spacing:-.01em; color:#fff; margin:0;">Your strength, <span style="font-weight:600; color:#0A0A0A;">their future.</span></p>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; color:rgba(255,255,255,.85); margin:16px 0 0;">FOUNDED 2026 · HAMILTON, ON · WWW.AMAWEALTH.CA</p>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#070707; border-top:4px solid #7A94A8;">
+    <div class="m-grid" style="max-width:1280px; margin:0 auto; padding:clamp(32px,7vw,64px) clamp(20px,6vw,56px) clamp(20px,4vw,40px); display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:13px; margin-bottom:20px;">
+          <img src="assets/gorilla-white.png" alt="AMA Wealth Management" style="height:52px; width:auto; object-fit:contain;">
+          <span style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:14px; letter-spacing:.22em; color:#fff;">AMA WEALTH</span>
+        </div>
+        <p style="font-family:'Lato',sans-serif; font-size:14px; line-height:1.7; color:#8A959E; margin:0; max-width:280px;">Your strength, their future.<br>Founded 2026 · Hamilton, ON</p>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">EXPLORE</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="#approach" onClick="{{ goApproach }}" style="cursor:pointer; font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Approach</a>
+          <a href="#clients" onClick="{{ goClients }}" style="cursor:pointer; font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Clients</a>
+          <a href="#planning" onClick="{{ goPlanning }}" style="cursor:pointer; font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Planning</a>
+          <a href="AMA Wealth Site - v5 (horiz) - Investments.dc.html" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Investments</a>
+          <a href="#media" onClick="{{ goMedia }}" style="cursor:pointer; font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Media</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">CONNECT</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="https://calendly.com/aravind-sithamparapillai-ironwoodcanada/30min" target="_blank" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">Book a call</a>
+          <a href="mailto:aravind@amawealth.ca" style="font-family:'Lato',sans-serif; font-size:14px; color:#C7CDD2;">aravind@amawealth.ca</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:#6B747B; margin-bottom:18px;">FIRM</div>
+        <p style="font-family:'Lato',sans-serif; font-size:12.5px; line-height:1.7; color:#8A959E; margin:0;">Aravind Sithamparapillai, MBA, CIM®, CFP®. Financial Planner, AMA Wealth. Investment Advisor, AMA Securities (Trade Name of Aligned Capital Partners Inc.)</p>
+      </div>
+    </div>
+    <div style="max-width:1280px; margin:0 auto; padding:clamp(20px,4vw,28px) clamp(20px,6vw,56px) clamp(28px,6vw,56px);">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-top:1px solid rgba(255,255,255,.08); padding-top:24px;">
+        <span style="font-family:'Lato',sans-serif; font-size:12px; color:#5A636A;">© 2026 AMA Wealth. All rights reserved.</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5A636A;">www.amawealth.ca</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#7A94A8&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#7A94A8&quot;,&quot;#000000&quot;,&quot;#5B6B78&quot;,&quot;#8A7A6B&quot;],&quot;section&quot;:&quot;Theme&quot;},&quot;heroShowGorilla&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;aravindPhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Sweater portrait&quot;,&quot;options&quot;:[&quot;Sweater portrait&quot;,&quot;Original&quot;,&quot;Grey background&quot;,&quot;Dusty blue background&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Bio&quot;},&quot;midwifePhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Option 9&quot;,&quot;options&quot;:[&quot;Placeholder&quot;,&quot;Option 1&quot;,&quot;Option 2&quot;,&quot;Option 3&quot;,&quot;Option 4&quot;,&quot;Option 5&quot;,&quot;Option 6&quot;,&quot;Option 7&quot;,&quot;Option 8&quot;,&quot;Option 9&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Clients — Midwife Photo&quot;},&quot;businessPhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Option 11&quot;,&quot;options&quot;:[&quot;Placeholder&quot;,&quot;Option 1&quot;,&quot;Option 2&quot;,&quot;Option 3&quot;,&quot;Option 4&quot;,&quot;Option 5&quot;,&quot;Option 6&quot;,&quot;Option 7&quot;,&quot;Option 8&quot;,&quot;Option 9&quot;,&quot;Option 10&quot;,&quot;Option 11&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Clients — Business Owner Photo&quot;},&quot;salesPhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Option 8&quot;,&quot;options&quot;:[&quot;Placeholder&quot;,&quot;Option 1&quot;,&quot;Option 2&quot;,&quot;Option 3&quot;,&quot;Option 4&quot;,&quot;Option 5&quot;,&quot;Option 6&quot;,&quot;Option 7&quot;,&quot;Option 8&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Clients — Sales Professional Photo&quot;}}">
+class Component extends DCLogic {
+  state = { servicesOpen: false, planningOpen: false, investmentOpen: false, clientMidwivesOpen: false, clientIncorporatedOpen: false, clientSalesOpen: false };
+  renderVals() {
+    const accentColor = this.props.accentColor ?? '#7A94A8';
+    const showGorilla = this.props.heroShowGorilla ?? true;
+    const photoMap = {
+      'Original': 'assets/aravind-dusty.png',
+      'Grey background': 'assets/aravind-gray.png',
+      'Dusty blue background': 'assets/aravind-blue.png',
+      'Sweater portrait': 'assets/aravind-sweater.jpg'
+    };
+    const aravindPhotoSrc = photoMap[this.props.aravindPhoto ?? 'Sweater portrait'] ?? photoMap['Sweater portrait'];
+    const mk = (id) => (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      const root = e.currentTarget.getRootNode();
+      const el = root.getElementById ? root.getElementById(id) : root.querySelector('#' + id);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 70;
+        window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+      }
+    };
+    const goTop = (e) => { if (e && e.preventDefault) e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+    const openServices = () => this.setState({ servicesOpen: true });
+    const closeServices = () => this.setState({ servicesOpen: false });
+    const togglePlanning = () => this.setState(s => ({ planningOpen: !s.planningOpen }));
+    const toggleInvestment = () => this.setState(s => ({ investmentOpen: !s.investmentOpen }));
+    const toggleClientMidwives = () => this.setState(s => ({ clientMidwivesOpen: !s.clientMidwivesOpen }));
+    const toggleClientIncorporated = () => this.setState(s => ({ clientIncorporatedOpen: !s.clientIncorporatedOpen }));
+    const toggleClientSales = () => this.setState(s => ({ clientSalesOpen: !s.clientSalesOpen }));
+
+    const midwifeMap = {
+      'Placeholder': 'assets/midwife-1.jpg',
+      'Option 1': 'assets/midwife-1.jpg',
+      'Option 2': 'assets/midwife-2.jpg',
+      'Option 3': 'assets/midwife-3.jpg',
+      'Option 4': 'assets/midwife-4.jpg',
+      'Option 5': 'assets/midwife-5.jpg',
+      'Option 6': 'assets/midwife-6.jpg',
+      'Option 7': 'assets/midwife-7.jpg',
+      'Option 8': 'assets/midwife-8.jpg',
+      'Option 9': 'assets/midwife-option-9.png'
+    };
+    const midwifePhotoSrc = midwifeMap[this.props.midwifePhoto ?? 'Option 9'];
+    const hasMidwifePhoto = !!midwifePhotoSrc;
+    const noMidwifePhoto = !midwifePhotoSrc;
+    const businessMap = {
+      'Placeholder': 'assets/business-1.jpg',
+      'Option 1': 'assets/business-1.jpg',
+      'Option 2': 'assets/business-2.jpg',
+      'Option 3': 'assets/business-3.jpg',
+      'Option 4': 'assets/business-4.jpg',
+      'Option 5': 'assets/business-5.jpg',
+      'Option 6': 'assets/business-6.jpg',
+      'Option 7': 'assets/business-7.jpg',
+      'Option 8': 'assets/business-8.jpg',
+      'Option 9': 'assets/business-9.jpg',
+      'Option 10': 'assets/business-10.jpg',
+      'Option 11': 'assets/business-option-11.jpg'
+    };
+    const businessPhotoSrc = businessMap[this.props.businessPhoto ?? 'Option 11'];
+    const hasBusinessPhoto = !!businessPhotoSrc;
+    const noBusinessPhoto = !businessPhotoSrc;
+    const salesMap = {
+      'Placeholder': 'assets/sales-1.jpg',
+      'Option 1': 'assets/sales-1.jpg',
+      'Option 2': 'assets/sales-2.jpg',
+      'Option 3': 'assets/sales-3.jpg',
+      'Option 4': 'assets/sales-4.jpg',
+      'Option 5': 'assets/sales-5.jpg',
+      'Option 6': 'assets/sales-6.jpg',
+      'Option 7': 'assets/sales-7.jpg',
+      'Option 8': 'assets/sales-option-8.png'
+    };
+    const salesPhotoSrc = salesMap[this.props.salesPhoto ?? 'Option 8'];
+    const hasSalesPhoto = !!salesPhotoSrc;
+    const noSalesPhoto = !salesPhotoSrc;
+    const salesPhotoPosition = 'center';
+    return {
+      accentColor, showGorilla, showPhoto: !showGorilla, aravindPhoto: aravindPhotoSrc,
+      goTop,
+      goApproach: mk('approach'), goClients: mk('clients'), goServices: mk('services'),
+      goPlanning: mk('planning'),
+      goMedia: mk('media'),
+      openServices, closeServices,
+      servicesMenuDisplay: this.state.servicesOpen ? 'block' : 'none',
+      servicesArrow: this.state.servicesOpen ? 'rotate(180deg)' : 'none',
+      
+      togglePlanning, toggleInvestment,
+      planningMaxHeight: this.state.planningOpen ? '1200px' : '0px',
+      planningOpen: this.state.planningOpen,
+      planningOpacity: this.state.planningOpen ? 1 : 0,
+      planningTranslate: this.state.planningOpen ? 'translateY(0)' : 'translateY(-22px)',
+      planningArrow: this.state.planningOpen ? 'rotate(180deg)' : 'none',
+      planningCardShadow: this.state.planningOpen ? '0 8px 24px rgba(0,0,0,.12)' : '0 2px 6px rgba(0,0,0,.06)',
+      
+      toggleClientMidwives, toggleClientIncorporated, toggleClientSales,
+      midwifePhotoSrc, hasMidwifePhoto, noMidwifePhoto,
+      businessPhotoSrc, hasBusinessPhoto, noBusinessPhoto,
+      salesPhotoSrc, hasSalesPhoto, noSalesPhoto, salesPhotoPosition,
+      
+      clientMidwivesImgHeight: this.state.clientMidwivesOpen ? '266px' : '154px',
+      clientMidwivesFilter: this.state.clientMidwivesOpen ? 'contrast(97%)' : 'grayscale(45%) contrast(92%) brightness(101%)',
+      clientMidwivesOverlay: this.state.clientMidwivesOpen ? 0 : 0.22,
+      clientMidwivesArrow: this.state.clientMidwivesOpen ? 'rotate(180deg)' : 'none',
+      clientMidwivesMaxHeight: this.state.clientMidwivesOpen ? '420px' : '0px',
+      clientMidwivesOpacity: this.state.clientMidwivesOpen ? 1 : 0,
+      
+      clientIncorporatedImgHeight: this.state.clientIncorporatedOpen ? '266px' : '154px',
+      clientIncorporatedFilter: this.state.clientIncorporatedOpen ? 'contrast(97%)' : 'grayscale(45%) contrast(92%) brightness(101%)',
+      clientIncorporatedOverlay: this.state.clientIncorporatedOpen ? 0 : 0.22,
+      clientIncorporatedArrow: this.state.clientIncorporatedOpen ? 'rotate(180deg)' : 'none',
+      clientIncorporatedMaxHeight: this.state.clientIncorporatedOpen ? '630px' : '0px',
+      clientIncorporatedOpacity: this.state.clientIncorporatedOpen ? 1 : 0,
+      
+      clientSalesImgHeight: this.state.clientSalesOpen ? '266px' : '154px',
+      clientSalesFilter: this.state.clientSalesOpen ? 'contrast(97%)' : 'grayscale(45%) contrast(92%) brightness(101%)',
+      clientSalesOverlay: this.state.clientSalesOpen ? 0 : 0.22,
+      clientSalesArrow: this.state.clientSalesOpen ? 'rotate(180deg)' : 'none',
+      clientSalesMaxHeight: this.state.clientSalesOpen ? '490px' : '0px',
+      clientSalesOpacity: this.state.clientSalesOpen ? 1 : 0,
+      
+      openPlanning: () => {}, closePlanning: () => {}, openInvestment: () => {}, closeInvestment: () => {}
+    };
+  }
+}
+</script>
+</body>
+</html>
